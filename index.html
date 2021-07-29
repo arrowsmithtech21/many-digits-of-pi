@@ -8,19 +8,15 @@
     <!-- "Security headers" according to Snyk -->
     <!-- I have absolutely no idea if this is even required for something so seemingly simple. -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src https://cdnjs.cloudflare.com">
+    <!-- <meta http-equiv="X-Frame-Options" content="DENY"> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com">
     <meta http-equiv="X-XSS-Protection" content="1">
     <!-- Short description -->
     <meta
         name="description"
         content="A webpage containing JavaScript code that will generate 10,000 digits of pi while the page loads.">
     <!-- Make it somewhat readable -->
-    <style>
-        p {
-            word-wrap: break-word;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>10,000 digits of pi</title>
 </head>
 <body>
